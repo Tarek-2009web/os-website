@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاوية لأنظمة التشغيل</title>
+    <style>
+        /* تنسيق الحاوية */
+        .os-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* تنسيق كل بطاقة */
+        .os-card {
+            width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+            text-decoration: none; /* إزالة الخط من الرابط */
+            color: black; /* لون النص */
+            display: block; /* يجعل الرابط يغطي البطاقة بالكامل */
+        }
+
+        /* تأثير عند تمرير الماوس */
+        .os-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* تأثير عند الضغط */
+        .os-card:active {
+            transform: scale(0.98);
+        }
+
+        /* تنسيق العنوان */
+        .os-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق الأيقونة */
+        .os-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* تنسيق الوصف */
+        .os-description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">🚀 أنظمة التشغيل الرئيسية</h2>
+
+    <div class="os-container">
+        <!-- بطاقة Windows -->
+        <a href="https://www.microsoft.com/windows" class="os-card">
+            <div class="os-icon">🖥️</div>
+            <div class="os-title">Windows</div>
+            <div class="os-description">نظام تشغيل من Microsoft.</div>
+        </a>
+
+        <!-- بطاقة macOS -->
+        <a href="https://www.apple.com/macos" class="os-card">
+            <div class="os-icon">🍏</div>
+            <div class="os-title">macOS</div>
+            <div class="os-description">نظام تشغيل من Apple.</div>
+        </a>
+
+        <!-- بطاقة Linux -->
+        <a href="https://www.linux.org" class="os-card">
+            <div class="os-icon">🐧</div>
+            <div class="os-title">Linux</div>
+            <div class="os-description">نظام تشغيل مفتوح المصدر.</div>
+        </a>
+    </div>
+
+</body>
+</html>
